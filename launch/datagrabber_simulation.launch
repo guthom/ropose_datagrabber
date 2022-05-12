@@ -1,0 +1,5 @@
+<launch>   
+  <rosparam file="$(find ropose_datagrabber)/yaml/DataGrabber_Config_sim.yaml" command="load" />  
+  <node name="datagrabber" pkg="ropose_datagrabber" type="datagrabber" output="screen">
+  </node>
+</launch>

@@ -1,0 +1,45 @@
+datagrabber:
+  AutoGrabbing: true
+  RefreshRate: 3
+  SavePath: /home/thomas/objects/object_data
+  SimCamLookAtRange: 2.0
+  SimCamLookAtYRange: -1.0
+  SimCamMaxAzimuthalAng: 0.0
+  SimCamMaxPolarAng: 3.1415927410125732
+  SimCamMaxRadius: 8.0
+  SimCamMinAzimuthalAng: 6.2831854820251465
+  SimCamMinPolarAng: 0.3141592741012573
+  SimCamMinRadius: 2.0
+  SwitchCamPoses: false
+
+  Cameras:
+  - name: "depthcam1"
+    linkName: "depthcam1_link"
+    frames: ["rgb"]
+    frameTopics: ["/depthcam1/depthcam1/color/image_raw"]
+    frameLinks: ["depthcam1_color_optical_frame"]
+    isOpticalFrame: [true]
+    camInfoTopics: ["/depthcam1/depthcam1/color/camera_info"]
+    
+  TransformNames: [
+    "aprilTag_0",
+    "aprilTag_0_0",
+    "aprilTag_0_1",
+    "aprilTag_0_2",
+    "aprilTag_0_3",
+    "aprilTag_1",
+    "aprilTag_1_0",
+    "aprilTag_1_1",
+    "aprilTag_1_2",
+    "aprilTag_1_3",
+    "aprilTag_2",
+    "aprilTag_2_0",
+    "aprilTag_2_1",
+    "aprilTag_2_2",
+    "aprilTag_2_3",
+    "aprilTag_3",
+    "aprilTag_3_0",
+    "aprilTag_3_1",
+    "aprilTag_3_2",
+    "aprilTag_3_3",
+  ]
